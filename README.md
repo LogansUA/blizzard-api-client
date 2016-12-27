@@ -27,7 +27,7 @@ git clone https://github.com/LogansUA/blizzard-api-php-client.git
 require_once __DIR__.'/../vendor/autoload.php';
 
 // Create a new Blizzard client with Blizzard API key
-$client = new \BlizzardApi\BlizzardClient('apiKey');
+$client = new \BlizzardApi\BlizzardClient('apiKey', 'apiSecret');
 
 // Create a new API service with configured Blizzard client
 $diablo = new \BlizzardApi\Service\Diablo($client);
